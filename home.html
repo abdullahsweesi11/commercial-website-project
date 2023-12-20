@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/general.css">
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=DM+Serif+Text&family=Playfair+Display&family=Roboto&family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>SWEESI LTD</h1>
+      <p>The gateway to fulfilling your academic goals</p>
+    </div>
+    <nav>
+      <ul>
+        <li class="home">HOME</li>
+        <li class="study-in-uk">
+          STUDY IN UK
+          <div class="dropdown-options">
+            <a href="" >
+              <p>All Courses</p>
+            </a>
+            <hr class="small"></hr>
+            <a href="https://www.google.co.uk/" target="_blank">
+              <p>Postgraduate</p>
+            </a>
+            <hr class="small"></hr>
+            <a href="">
+              <p>Undergraduate</p>
+            </a>
+          </div>
+        </li>
+        <li>ENGLISH</li>
+        <li>TRAINING</li>
+        <li>SEARCH</li>
+        <li class="language" style="color: #0066CC; text-decoration: underline;">EN</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="left-decoration"></div>
+      <div class="hero-text">
+        <h1>UK International Students:</h1>
+        <p>Whether you're looking to sharpen <span>English Language skills</span>, develop <span>academic practices</span>, or navigate <span>UK education opportunities</span>, we're here to make your journey seamless and successful.</p>
+        <div class="get-in-touch">
+          <p>Get In Touch</p>
+          <ion-icon name="caret-down-circle-outline"></ion-icon>
+        </div>
+      </div>
+      <div>
+        <div class="hero-image-shadow"></div>
+        <img src="hero-image.webp" class="hero-image">
+      </div>
+    </section>
+    <section class="our-services">
+      <h1>Our Services</h1>
+      <hr></hr>
+      <div class="panels">
+        <div class="university panel">
+          <div class="panel-top"><h2 class="panel-title">University educated</h2></div>
+          <div class="panel-bottom"><p class="panel-text">Enrol in undergraduate / postgraduate courses</p></div>
+        </div>
+        <div class="english panel">
+          <div class="panel-top"><h2 class="panel-title">Learn English</h2></div>
+          <div class="panel-bottom"><p class="panel-text">Further your reading, writing and oral English proficiency</p></div>
+        </div>
+        <div class="skills panel">
+          <div class="panel-top"><h2 class="panel-title">Develop yourself</h2></div>
+          <div class="panel-bottom"><p class="panel-text">Enhance your skill-set and elevate your career prospects</p></div>
+        </div>
+        <div class="community panel">
+          <div class="panel-top"><h2 class="panel-title">Join the community</h2></div>
+          <div class="panel-bottom"><p class="panel-text">Integrate into tight-knit communities in the UK</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="submit-request">
+      <h2>Submit a request</h2>
+      <h3>Fill in your details and we will contact you within 4-5 working days</h3>
+      <p>Required fields are marked by <strong>*</strong></p>
+      <form method="post" action="mailto:abdullahsweesi11@gmail.com">
+        <label for="full-name">
+          Full Name <strong>*</strong><br>
+          <input name="full-name" id="full-name" required>
+        </label>
+        <label for="education-level">
+          Highest level of education <strong>*</strong><br>
+          <select name="education-level" id="education-level" required></select>
+        </label>
+        <label for="email">
+          E-mail address <strong>*</strong><br>
+          <input name="email" type="email" id="email" required>
+        </label>
+        <label for="mobile-number">
+          Mobile number (+44)<br>
+          <input name="mobile-number" type="tel" id="mobile-number">
+        </label>
+        <label for="nationality">
+          Nationality <strong>*</strong><br>
+          <select name="nationality" id="nationality" required></select>
+        </label>
+        <label for="residence-status">
+          UK residence status <strong>*</strong><br>
+          <select name="residence-status" id="residence-status" required></select>
+        </label>
+        <fieldset id="service-type" name="service-type">
+          Which service are you interested in?<br>
+          <label for="university-education">University Education
+          <input type="checkbox" name="service" id="university-education" value="university-education"></label><br>
+          <input type="checkbox" name="service" id="learning-english" value="learning-english">
+          <label for="learning-english">Learning English</label><br>
+          <input type="checkbox" name="service" id="skills-development" value="skills-development">
+          <label for="skills-development">Skills Development</label><br>
+          <input type="checkbox" name="service" id="communities-near-me" value="communities-near-me">
+          <label for="communities-near-me">Find communities in near me</label><br>
+        </fieldset>
+        <label>Please include any relevant details
+          <textarea cols="50" rows="10"></textarea>
+        </label>
+        <input type="submit" value="Send Request">
+      </form>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
+
