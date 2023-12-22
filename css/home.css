@@ -1,0 +1,252 @@
+html,body
+{
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    background: #161A30;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    border-bottom: 4px solid #31304D
+}
+
+header > h1 {
+    color: white;
+    padding-left: 150px;
+}
+
+header > nav {
+    margin-right: 150px;
+    width: 40%
+}
+
+header > nav > ul {
+    display: flex;
+    list-style: none;
+    margin: 31px 0;
+    justify-content: space-between;
+}
+
+header li {
+    color: white
+}
+
+#hero {
+    display: flex;
+    background-color: #F0ECE5;
+    justify-content: space-between;
+    padding-top: 230px;
+    padding-bottom: 150px;
+}
+
+#hero div {
+    font-family: sans-serif;
+    margin-left: 150px;
+}
+
+#hero div h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #31304D;
+}
+
+#hero div p {
+    font-size: 18px;
+    color: #31304D;
+    width: 90%;
+    margin: 30px 0;
+}
+
+#hero div button {
+    font-size: 18px;
+    padding: 10px 30px;
+    background: #B6BBC4;
+    margin-top: 50px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+#hero div a {
+    font-size: 18px;
+    padding: 0;
+    font-weight: bold;
+    color: #31304D;
+    text-decoration: none;
+}
+
+#hero img {
+    object-fit: cover;
+    width: 1250px;
+    height: 450px;
+    margin-right: 150px
+}
+
+#projects {
+    height: 550px;
+}
+
+#projects h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.panel-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 350px;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.panel div {
+    height: 200px;
+    width: 200px;
+    border: 6px solid #3882f9;
+    border-radius: 10px;
+}
+
+.panel p {
+    text-align: center;
+    color: #3a3b3c;
+}
+
+#quotes {
+    height: 550px;
+    background: #e5e7eb
+}
+
+#quotes blockquote {
+    font-size: 48px;
+    margin: auto;
+    padding-top: 150px;
+    width: 900px;
+    color: #1f2937;
+    font-weight: 100;
+}
+
+#quotes p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 950px;
+    width: 900px;
+}
+
+#call-to-action {
+    background: #161A30;
+    height: 850px;
+    padding: 100px 150px;
+    display: flex;
+    justify-content: center;
+}
+
+#call-to-action > div {
+    background: #F0ECE5;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+
+#call-to-action h3 {
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+
+#call-to-action div > p {
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+#call-to-action form p {
+    font-size: 18px;
+}
+
+#call-to-action #service-type p {
+    display: inline;
+}
+
+
+#call-to-action form {
+    display:flex;
+    flex-direction: column;
+}
+
+#call-to-action #info {
+    border: none;
+    display: grid;
+    padding: 30px;
+    grid-template-rows: repeat(auto-fit, minmax(90px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:10px;
+    place-items: start;
+    place-content: center;
+}
+
+#service-type {
+    padding: 15px 30px 30px 30px;
+    border: none;
+}
+
+#service-type ul {
+    margin: 20px;
+    margin-bottom: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly
+}
+
+
+#call-to-action #lbl-details {
+    padding: 15px 30px 30px;
+}
+
+#call-to-action #lbl-details textarea {
+    resize: none;
+    width: 100%;
+    min-height: 200px;
+    margin-top: 10px;
+}
+
+#call-to-action input[type= 'submit'] {
+    font-size: 18px;
+    max-width: 300px;
+    margin: 0px 30px;
+    padding: 10px 30px;
+    background: #161A30;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    align-self: center;
+}
+
+
+footer {
+    font-size: 18px;
+    line-height: 150px;
+    border-top: 5px solid #F0ECE5;
+    color: #fff;
+    height: 150px;
+    background-color: #161A30;
+    text-align: center;
+}
